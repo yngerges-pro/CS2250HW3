@@ -2,6 +2,7 @@ let expression = [];
 let display;
 let UserInput = ""
 
+//displays Numbers
 function getNumber(num){ 
     expression.push(num) //stores numbers in expression list
     UserInput = expression.join(' ') //converts the expression to string
@@ -9,22 +10,26 @@ function getNumber(num){
 
 }
 
+//displays operatations
 function getOperator(op){
     expression.push(op) //stores operations in expressionlist
     UserInput = expression.join(' ') //converts the expression to string
     display.value = UserInput //shows expression
 }
 
+//updates what is being displaid
 function updateDisplay() {
   display.value = UserInput; //updates the Display
 }
 
+//clears and removes user's math expression
 function clearDisplay() { //removes the expression
   expression = []
   UserInput = "";
   updateDisplay();
 }
 
+//Calculates the expression without eval()
 function calulationequals() {
   try {
     let parts = UserInput.split(' '); // Split the expression into numbers and operators
