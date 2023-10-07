@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+
+ 
+<!--head element [1]-->
+	<head>
+    <meta charset="UTF-8">
+		<!--title element [2]-->
+		<title>Youstina Gerges</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+	</head>
+
+    <body>
+
+        <div class="calculator">
+            <input type="text" id="display">
+            <div class="buttonContainer">
+                <input type="button" id="num1" value="1" onclick="getNumber(1)">
+                <input type="button" id="num2" value="2" onclick="getNumber(2)">
+                <input type="button" id="num3" value="3" onclick="getNumber(3)">
+                <input type="button" id="plus" value="+" onclick="getOperator('+')">
+            </div>
+            <div class="buttonContainer">
+                <input type="button" id="num4" value="4" onclick="getNumber(4)">
+                <input type="button" id="num5" value="5" onclick="getNumber(5)">
+                <input type="button" id="num6" value="6" onclick="getNumber(6)">
+                <input type="button" id="minus" value="-" onclick="getOperator('-')">
+            </div>
+            <div class="buttonContainer">
+                <input type="button" id="num7" value="7" onclick="getNumber(7)">
+                <input type="button" id="num8" value="8" onclick="getNumber(8)">
+                <input type="button" id="num9" value="9" onclick="getNumber(9)">
+                <input type="button" id="mult" value="x" onclick="getOperator('*')">
+            </div>
+            <div class="buttonContainer">
+                <input type="button" id="clear" value="C" onclick="clearDisplay()">
+                <input type="button" id="num0" value="0" onclick="getNumber(0)">
+                <input type="submit" id="enter" value="=" onclick="calulationequals()">
+                <input type="button" id="division" value="/" onclick="getOperator('/')">
+            </div>
+        </div>
+            
+    </body>
+</html>
